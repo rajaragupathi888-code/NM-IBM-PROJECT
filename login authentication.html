@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login / Register</title>
+  <link rel="stylesheet" href="login-styles.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Register</h2>
+    <form id="register-form">
+      <input name="username" placeholder="Username" required />
+      <input name="password" type="password" placeholder="Password" required />
+      <button type="submit">Register</button>
+      <div class="msg" aria-live="polite"></div>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input name="username" placeholder="Username" required />
+      <input name="password" type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+      <div class="msg" aria-live="polite"></div>
+    </form>
+    <div class="meta">
+      <p id="current-user">Not signed in</p>
+      <button id="logout-btn" style="margin-top:0.5rem;background:#ef4444">Logout</button>
+    </div>
+  </div>
+
+  <script src="login-authentication.js"></script>
+</body>
+</html>
